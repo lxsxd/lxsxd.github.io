@@ -902,6 +902,28 @@
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2024/08/08/114514.%E4%B8%8B%E5%8C%97%E6%B3%BD%E6%9D%82%E7%89%A9%E5%8C%BA/%E5%88%9B%E5%BB%BAnat%E7%BD%91%E7%BB%9C/">
+                     
+										    创建nat网络
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/08/08/114514.%E4%B8%8B%E5%8C%97%E6%B3%BD%E6%9D%82%E7%89%A9%E5%8C%BA/%E9%80%9A%E8%BF%87virt-install%E5%8A%A0%E8%BD%BDcloudinit/">
+                     
+										    通过virt-install加载cloudinit
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -913,6 +935,48 @@
 	<!-- 引入正文 -->
 	<div id="content" class="content">
 		<div id="index">
+	
+		<div class="index-li">
+			<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/02.%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E5%8D%8F%E8%AE%AE/3.nfs/1.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/">
+				<h2 class="index-title">
+					nfs基本配置
+				</h2>
+				<div class="index-brief">
+					nfs基本配置安装1yum install nfs-utils
+
+创建共享文件夹创建目录
+12mkdir /opt/nfsecho &quot;114514&quot; &gt; /opt/nfs/test.txt
+
+设置共享文件夹
+123cat &gt; /etc/exports &lt;&lt;
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2024-08-08</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/02.%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E5%8D%8F%E8%AE%AE/2.vsftpd/2.%E8%99%9A%E6%8B%9F%E7%94%A8%E6%88%B7/">
+				<h2 class="index-title">
+					vsftpd虚拟用户
+				</h2>
+				<div class="index-brief">
+					vsftpd虚拟用户修改配置文件配置/etc/vsftpd/vsftpd.conf12345anonymous_enable=NO        #禁用匿名用户local_umask=002            #本地用户创建的权限guest_enable=YES        #启用虚拟用户gu
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2024-08-08</span>
+                    
+                            
+                    
+                </div>
+		</div>	
 	
 		<div class="index-li">
 			<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/02.%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E5%8D%8F%E8%AE%AE/2.vsftpd/1.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/">
@@ -1072,50 +1136,6 @@ smb用户管理查询所有用户1pdbedit -L
 			</a>
                 <div class="article-meta">
 				    <span>2024-08-08</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2024/08/07/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/4.bind/7.%E9%99%90%E5%88%B6%E7%BD%91%E6%AE%B5/">
-				<h2 class="index-title">
-					bind限制网段
-				</h2>
-				<div class="index-brief">
-					限制bind查询网段修改配置文件编辑/etc/named.conf，此处为只允许localhost查询
-1234options &#123;    ...    allow-query     &#123; localhost; &#125;;&#125;
-
-修改后重启，在其他机子查询dns结果如下
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2024-08-07</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2024/08/07/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/4.bind/6.chroot/">
-				<h2 class="index-title">
-					bind的chroot模式
-				</h2>
-				<div class="index-brief">
-					bind的chroot安装1yum install bind-chroot -y
-
-配置chroot使用自带脚本挂载路径
-1/usr/libexec/setup-named-chroot.sh /var/named/chroot on
-
-因为是挂载，所以直接修改源路径和chroot路径效果是一样的。
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2024-08-07</span>
                     
                             
                     

@@ -902,6 +902,28 @@
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2024/08/08/114514.%E4%B8%8B%E5%8C%97%E6%B3%BD%E6%9D%82%E7%89%A9%E5%8C%BA/%E5%88%9B%E5%BB%BAnat%E7%BD%91%E7%BB%9C/">
+                     
+										    创建nat网络
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/08/08/114514.%E4%B8%8B%E5%8C%97%E6%B3%BD%E6%9D%82%E7%89%A9%E5%8C%BA/%E9%80%9A%E8%BF%87virt-install%E5%8A%A0%E8%BD%BDcloudinit/">
+                     
+										    通过virt-install加载cloudinit
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -913,6 +935,50 @@
 	<!-- 引入正文 -->
 	<div id="content" class="content">
 		<div id="index">
+	
+		<div class="index-li">
+			<a href="/2024/08/07/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/4.bind/7.%E9%99%90%E5%88%B6%E7%BD%91%E6%AE%B5/">
+				<h2 class="index-title">
+					bind限制网段
+				</h2>
+				<div class="index-brief">
+					限制bind查询网段修改配置文件编辑/etc/named.conf，此处为只允许localhost查询
+1234options &#123;    ...    allow-query     &#123; localhost; &#125;;&#125;
+
+修改后重启，在其他机子查询dns结果如下
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2024-08-07</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2024/08/07/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/4.bind/6.chroot/">
+				<h2 class="index-title">
+					bind的chroot模式
+				</h2>
+				<div class="index-brief">
+					bind的chroot安装1yum install bind-chroot -y
+
+配置chroot使用自带脚本挂载路径
+1/usr/libexec/setup-named-chroot.sh /var/named/chroot on
+
+因为是挂载，所以直接修改源路径和chroot路径效果是一样的。
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2024-08-07</span>
+                    
+                            
+                    
+                </div>
+		</div>	
 	
 		<div class="index-li">
 			<a href="/2024/08/07/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/4.bind/5.%E9%9A%90%E8%97%8F%E7%89%88%E6%9C%AC%E5%8F%B7/">
@@ -1092,88 +1158,10 @@
                 </div>
 		</div>	
 	
-		<div class="index-li">
-			<a href="/2024/08/07/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/1.yum%E5%92%8Crpm/yum/1.%E9%85%8D%E7%BD%AE%E6%9C%AC%E5%9C%B0%E6%BA%90/">
-				<h2 class="index-title">
-					配置yum本地源
-				</h2>
-				<div class="index-brief">
-					配置yum本地源备份原有文件原有的文件和路径如下：
-12[root@linux1 ~]# ls /etc/yum.repos.d/rocky-addons.repo  rocky-devel.repo  rocky-extras.repo  rocky.repo
-
-直接备份文件夹
-12mv /etc
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2024-08-07</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2024/08/07/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/1.yum%E5%92%8Crpm/rpm/1.rpm%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/">
-				<h2 class="index-title">
-					rpm的基本使用方法
-				</h2>
-				<div class="index-brief">
-					rpm基础使用rpm用的比较少，不能自动处理依赖关系
-
-
-
-常用选项
-说明
-
-
-
--i
-安装软件
-
-
--U
-升级软件
-
-
--v
-显示详细信息
-
-
--h
-显示进度条
-
-
--e
-卸载软件包
-
-
--q
-查询软件包
-
-
--V
-校验安装包
-
-
-安装升级软件安装
-1rpm -ivh vim-minimal-8.
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2024-08-07</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
 	
 	<div id="index-paginator">
 		
-			<a class="extend prev" rel="prev" href="/page/2/">&lt;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">&gt;</a>
+			<a class="extend prev" rel="prev" href="/page/2/">&lt;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/">&gt;</a>
 		
 	</div>
 </div>
