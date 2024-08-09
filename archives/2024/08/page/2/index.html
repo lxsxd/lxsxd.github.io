@@ -487,6 +487,61 @@
 								
 							</ul>
 			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										9.IP配置
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										1.nmcli
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/9.IP%E9%85%8D%E7%BD%AE/1.nmcli/1.%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">
+                     
+										    1.基本使用
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										3.hostname
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/9.IP%E9%85%8D%E7%BD%AE/3.hostname/1.%E4%B8%BB%E6%9C%BA%E5%90%8D/">
+                     
+										    1.主机名
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -893,6 +948,17 @@
 									
 							<ul>
 								<li class="file">
+									<a href="/2024/08/09/114514.%E4%B8%8B%E5%8C%97%E6%B3%BD%E6%9D%82%E7%89%A9%E5%8C%BA/qemu%E5%AE%89%E8%A3%85android-x86/">
+                     
+										    qemu安装android-x86
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2024/08/07/114514.%E4%B8%8B%E5%8C%97%E6%B3%BD%E6%9D%82%E7%89%A9%E5%8C%BA/vim%E7%AE%80%E6%98%93%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/">
                      
 										    vim简易脚本编写
@@ -935,6 +1001,77 @@
 	<!-- 引入正文 -->
 	<div id="content" class="content">
 		<div id="index">
+	
+		<div class="index-li">
+			<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/02.%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E5%8D%8F%E8%AE%AE/5.iscsi/1.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/">
+				<h2 class="index-title">
+					iscsi基本配置
+				</h2>
+				<div class="index-brief">
+					iscsi基本配置安装1yum install targetcli -y
+
+创建共享进入targetcli
+1targetcli
+
+创建块设备
+12cd /backstores/blockcreate dev=/dev/sdb1 name=sdb1
+
+创建target
+12cd /iscsicrea
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2024-08-08</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/02.%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E5%8D%8F%E8%AE%AE/4.rsync/2.%E6%9C%8D%E5%8A%A1%E7%AB%AF/">
+				<h2 class="index-title">
+					rsyncd基本配置
+				</h2>
+				<div class="index-brief">
+					rsync服务端安装1yum install rsync rsync-daemon -y
+
+修改配置文件修改默认配置文件路径为/etc/rsyncd.conf
+123cat &gt; /etc/sysconfig/rsyncd &lt;&lt; EOFOPTIONS=&quot;/etc/rsync
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2024-08-08</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/02.%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E5%8D%8F%E8%AE%AE/4.rsync/1.%E5%AE%A2%E6%88%B7%E7%AB%AF/">
+				<h2 class="index-title">
+					rsync同步
+				</h2>
+				<div class="index-brief">
+					rsync客户端安装1yum install rsync -y
+
+同步12mkdir /opt/reporsync -av rsync://172.20.20.11/repo /opt/repo
+
+这里的repo是服务端那边指定的，参考服务端的配置
+1234...[repo]path=/opt/re
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2024-08-08</span>
+                    
+                            
+                    
+                </div>
+		</div>	
 	
 		<div class="index-li">
 			<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/02.%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E5%8D%8F%E8%AE%AE/3.nfs/1.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/">
@@ -1082,70 +1219,10 @@ smb用户管理查询所有用户1pdbedit -L
                 </div>
 		</div>	
 	
-		<div class="index-li">
-			<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/6.openssh/3.sshpass/">
-				<h2 class="index-title">
-					sshpass基本用法
-				</h2>
-				<div class="index-brief">
-					sshpass的使用安装1yum install sshpass -y
-
-密码传入方式1234567891011# -p使用密码sshpass -p Pass-1234 ssh root@client.skills.com hostname# -f使用文件（注意权限问题）echo &#x27;Pas
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2024-08-08</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/6.openssh/2.%E6%89%B9%E9%87%8F%E5%85%8D%E5%AF%86/">
-				<h2 class="index-title">
-					ssh批量免密
-				</h2>
-				<div class="index-brief">
-					ssh批量传输秘钥方法一、sshpass安装1yum install sshpass -y
-
-免密123for i in &#123;1..10&#125;;do sshpass -p &#x27;Pass-1234&#x27; ssh-copy-id -f -o StrictHostKeyChec
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2024-08-08</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/6.openssh/1.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/">
-				<h2 class="index-title">
-					openssh基本配置
-				</h2>
-				<div class="index-brief">
-					openssh-server基本配置安装1yum install openssh-server -y
-
-启动&amp;防火墙123systemctl enable --now sshdfirewall-cmd --add-port=22/tcpfirewall-cmd --add-port=22/t
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2024-08-08</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
 	
 	<div id="index-paginator">
 		
-			<a class="extend prev" rel="prev" href="/archives/2024/08/">&lt;</a><a class="page-number" href="/archives/2024/08/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2024/08/page/3/">3</a><a class="page-number" href="/archives/2024/08/page/4/">4</a><a class="extend next" rel="next" href="/archives/2024/08/page/3/">&gt;</a>
+			<a class="extend prev" rel="prev" href="/archives/2024/08/">&lt;</a><a class="page-number" href="/archives/2024/08/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2024/08/page/3/">3</a><a class="page-number" href="/archives/2024/08/page/4/">4</a><a class="page-number" href="/archives/2024/08/page/5/">5</a><a class="extend next" rel="next" href="/archives/2024/08/page/3/">&gt;</a>
 		
 	</div>
 </div>

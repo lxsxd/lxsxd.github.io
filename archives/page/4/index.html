@@ -487,6 +487,61 @@
 								
 							</ul>
 			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										9.IP配置
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										1.nmcli
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/9.IP%E9%85%8D%E7%BD%AE/1.nmcli/1.%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">
+                     
+										    1.基本使用
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										3.hostname
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/08/08/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/9.IP%E9%85%8D%E7%BD%AE/3.hostname/1.%E4%B8%BB%E6%9C%BA%E5%90%8D/">
+                     
+										    1.主机名
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -893,6 +948,17 @@
 									
 							<ul>
 								<li class="file">
+									<a href="/2024/08/09/114514.%E4%B8%8B%E5%8C%97%E6%B3%BD%E6%9D%82%E7%89%A9%E5%8C%BA/qemu%E5%AE%89%E8%A3%85android-x86/">
+                     
+										    qemu安装android-x86
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2024/08/07/114514.%E4%B8%8B%E5%8C%97%E6%B3%BD%E6%9D%82%E7%89%A9%E5%8C%BA/vim%E7%AE%80%E6%98%93%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/">
                      
 										    vim简易脚本编写
@@ -935,6 +1001,75 @@
 	<!-- 引入正文 -->
 	<div id="content" class="content">
 		<div id="index">
+	
+		<div class="index-li">
+			<a href="/2024/08/07/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/3.rsyslog/1.%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%BF%9E%E6%8E%A5/">
+				<h2 class="index-title">
+					rsyslog快速开始
+				</h2>
+				<div class="index-brief">
+					rsyslog基本配置安装rsyslog1yum install rsyslog -y
+
+配置rsyslog服务端配置此处简单的把客户端的日志转发到服务端，日志路径为/etc/rsyslog.conf 
+1234567# 监听514/udp端口module(load=&quot;imudp&quot
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2024-08-07</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2024/08/07/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/2.chronyd/1.%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%90%8C%E6%AD%A5/">
+				<h2 class="index-title">
+					chronyd同步时间
+				</h2>
+				<div class="index-brief">
+					chrony基本配置安装chrony1yum install chrony -y
+
+配置chronychrony的配置文件路径为/etc/chrony.conf
+以下是一些基础的配置
+如果需要更加详细的解释请参考官方文档：传送门
+1234567891011121314# 指定服务器地址池pool 2
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2024-08-07</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2024/08/07/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/1.yum%E5%92%8Crpm/yum/2.%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C%E6%BA%90/">
+				<h2 class="index-title">
+					配置yum网络源
+				</h2>
+				<div class="index-brief">
+					配置yum仓库网络源如果没有联网，请配置本地源安装httpd等
+利用httpd配置http源安装httpd1yum install -y httpd
+
+挂载镜像创建挂载目录
+1mkdir -p /var/www/html/repo
+
+挂载物理镜像
+1mount /dev/sr0 /var/www/h
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2024-08-07</span>
+                    
+                            
+                    
+                </div>
+		</div>	
 	
 		<div class="index-li">
 			<a href="/2024/08/07/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/01.%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/1.yum%E5%92%8Crpm/yum/1.%E9%85%8D%E7%BD%AE%E6%9C%AC%E5%9C%B0%E6%BA%90/">
@@ -1132,71 +1267,6 @@
 			</a>
                 <div class="article-meta">
 				    <span>2024-08-05</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2024/08/05/000002.%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/rockylinux/12.%E8%84%9A%E6%9C%AC/4.rust/1.helloworld/">
-				<h2 class="index-title">
-					1.helloworld
-				</h2>
-				<div class="index-brief">
-					123fn main() &#123;    println!(&quot;Hello, world!&quot;);&#125;
-
-偷懒方法
-12yum install cargo -ycargo new aaa
-
-然后在src里面有
-1234[root@linux1 ~]# cat aaa/sr
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2024-08-05</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2024/08/04/000001.%E8%99%9A%E6%8B%9F%E5%8C%96/0.%E5%BC%80%E7%AB%AF/">
-				<h2 class="index-title">
-					关于虚拟化
-				</h2>
-				<div class="index-brief">
-					什么是虚拟化虚拟化技术可用于创建服务器、存储、网络和其他物理机的虚拟表示。虚拟软件模仿物理硬件的功能，在单台物理机器上同时运行多个虚拟机。企业使用虚拟化来有效地使用他们的硬件资源并从投资中获得更丰厚的回报。它还支持云计算服务，帮助组织更有效地管理基础设施。
-为什么虚拟化很重要？通过使用虚拟化，您可以
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2024-08-04</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2024/08/04/000000.cshrimp/0.%E5%85%B3%E4%BA%8E%E6%88%91/">
-				<h2 class="index-title">
-					关于我和一些计划
-				</h2>
-				<div class="index-brief">
-					不对，这堆东西不应该写在about页里面吗？
-我不管什么都多少沾点，但是又不完全沾点。简称：啥也不会。
-总是想自己创造点什么（例如文章、画、歌曲、视频、软件？PCB？操作系统？），然后发现不如打游戏实在。
-cshrimp这个名字是我在初二（中二）的时候取的。
-当时大概是在2020上网课，无意间发现c
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2024-08-04</span>
                     
                             
                     
